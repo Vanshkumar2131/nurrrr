@@ -13,7 +13,7 @@ const Footer = () => {
   useEffect(() => {
     const fetchCompanyInfo = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/company-info');
+        const response = await axios.get('https://nurrrr.onrender.com/api/company-info');
         setCompanyInfo(response.data);
       } catch (error) {
         console.error('Error fetching company info:', error);
